@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "normalize";
+@import "modal";
+@import "flexbox";
+@import "helpclass";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1620px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  .df;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  .fc;
+}
+
+.sec3{
+    padding-top: 100px;
+    padding-bottom: 129px;
+    .container{
+      display: flex;
+      flex-direction: column;
+      .text{
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
+    
+  
+        }
+        h2{
+          font-family: 'PingFang SC';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 50px;
+          line-height: 70px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #000F35;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          margin: 0;
+          &::before{
+            position: absolute;
+            content: "";
+            width: 250px;
+            height: 2px;
+            background: linear-gradient(to left, rgba(0, 15, 53, 1), rgba(0, 15, 53, 0));
+            z-index: 1;
+            right: 300px; 
+          }
+          &::after{
+            position: absolute;
+            content: "";
+            width: 250px;
+            height: 2px;
+            background: linear-gradient(to right, rgba(0, 15, 53, 1), rgba(0, 15, 53, 0));
+            z-index: 1;
+            left: 300px; 
+          }
+  
+      }
+      .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .item{
+          min-width: 303px;
+          // .photo{
+          //   img{
+  
+          //   }
+          // }
+          .price{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+              font-family: 'PingFang SC';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 42px;
+              text-align: center;
+              color: #000F35;
+            }
+            a{
+              padding: 3px 26px;
+              background: #0066FF;
+              border-radius: 20px;
+              font-family: 'PingFang SC';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 28px;
+              text-align: center;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+  }
